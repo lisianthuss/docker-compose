@@ -2,7 +2,7 @@ version: '3'
 
 services:
   traefik:
-    image: traefik
+    image: traefik:latest
     container_name: traefik
     command:
       - "--api.insecure=true"
@@ -10,15 +10,18 @@ services:
       - "--accesslog=true"
       - "--providers.docker=true"
       - "--providers.docker.exposedbydefault=false"
-        #- "--entrypoints.web.address=:80"
-        #- "--entrypoints.websecure.address=:443"
-        #- "--certificatesresolvers.letsenc.acme.email=ionateous@gmail.com"
-        #- "--certificatesresolvers.letsenc.acme.storage=acme.json"
-        #- "--certificatesresolvers.letsenc.acme.tlsChallenge=true"
-        #- "--certificatesresolvers.letsenc.acme.httpChallenge=true"
-        #- "--certificatesresolvers.letsenc.acme.httpChallenge.entryPoint=web"
-        #- "--entrypoints.ssh.address=:9022"
-        #- "--entrypoints.ssh.http.redirections.entrypoint.to=:22"
+
+      - "--entrypoints.web.address=:80"
+      - "--entrypoints.websecure.address=:443"
+
+      - "--certificatesresolvers.letsenc.acme.email=ionateous@gmail.com"
+      - "--certificatesresolvers.letsenc.acme.storage=acme.json"
+      - "--certificatesresolvers.letsenc.acme.tlsChallenge=true"
+      - "--certificatesresolvers.letsenc.acme.httpChallenge=true"
+      - "--certificatesresolvers.letsenc.acme.httpChallenge.entryPoint=web"
+
+      - "--entrypoints.ssh.address=:9022"
+      - "--entrypoints.ssh.http.redirections.entrypoint.to=:22"
     volumes:
       #- ./traefik.toml:/etc/traefik/traefik.toml
       - ./acme.json:/acme.json
@@ -43,17 +46,20 @@ services:
       - "traefik.http.routers.traefik.entrypoint=web"
       - 'traefik.http.routers.traefik.rule=Host("luel.duckdns.org")'
       - "traefik.http.routers.traefik.service=api@interal"
-        #- "traefik.http.routers.ssh.entrypoint=web"
-        #- 'traefik.http.routers.ssh.rule=Host("ssh.duckdns.org")'
-        #- "traefik.http.routers.ssh.service=ssh-svc"
-        #- "traefik.http.services.ssh-svc.loadbalancer.server.port=22"
-        #- "traefik.http.services.ssh-svc.loadbalancer.server.scheme=http"
-        # redirect all http to https permanently
-        #- "traefik.http.routers.http_catchall.rule=HostRegexp('{any:.+}')"
-        #- "traefik.http.routers.http_catchall.entrypoints=web"
-        #- "traefik.http.routers.http_catchall.middlewares=https_redirect"
-        #- "traefik.http.middlewares.https_redirect.redirectscheme.scheme=https"
-        #- "traefik.http.middlewares.https_redirect.redirectscheme.permanent=true"
+
+      - "traefik.http.routers.ssh.entrypoint=web"
+      - 'traefik.http.routers.ssh.rule=Host("ssh.duckdns.org")'
+      - "traefik.http.routers.ssh.service=ssh-svc"
+      - "traefik.http.services.ssh-svc.loadbalancer.server.port=22"
+      - "traefik.http.services.ssh-svc.loadbalancer.server.scheme=http"
+
+      # redirect all http to https permanently
+      - "traefik.http.routers.http_catchall.rule=HostRegexp('{any:.+}')"
+      - "traefik.http.routers.http_catchall.entrypoints=web"
+      - "traefik.http.routers.http_catchall.middlewares=https_redirect"
+
+      - "traefik.http.middlewares.https_redirect.redirectscheme.scheme=https"
+      - "traefik.http.middlewares.https_redirect.redirectscheme.permanent=true"
 
 networks:
   gitea:
