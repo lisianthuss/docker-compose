@@ -1,0 +1,11 @@
+[http]
+    [http.routers]
+       [http.routers.traefik]
+          rule = "Host(`luel.duckdns.org`)"
+          service = "traefik"
+          entrypoint=["http"]
+
+       [http.services]
+         [http.services.whoami.loadbalancer]
+           [[http.services.whoami.loadbalancer.servers]]
+             url = "http://localhost:8080"

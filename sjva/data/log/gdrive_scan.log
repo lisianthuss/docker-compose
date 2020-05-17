@@ -1,0 +1,43 @@
+[2020-05-07 18:54:40,776|DEBUG|D:\Cloud\CloudStation\SJ\SJVA\plugin\gdrive_scan\plugin.py:46] plugin_load:gdrive_scan
+[2020-05-07 19:11:36,388|DEBUG|plugin.py:46] plugin_load:gdrive_scan
+[2020-05-07 19:24:22,491|DEBUG|plugin.py:70] DETAIL gdrive_scan list
+[2020-05-07 19:24:22,920|DEBUG|plugin.py:89] AJAX gdrive_scan filelist
+[2020-05-07 19:24:22,952|DEBUG|logic.py:242] ModelGDriveScanFile count:0
+[2020-05-07 19:25:10,087|DEBUG|plugin.py:70] DETAIL gdrive_scan list
+[2020-05-07 19:25:10,457|DEBUG|plugin.py:89] AJAX gdrive_scan filelist
+[2020-05-07 19:25:10,485|DEBUG|logic.py:242] ModelGDriveScanFile count:0
+[2020-05-07 19:25:10,829|DEBUG|plugin.py:70] DETAIL gdrive_scan setting
+[2020-05-07 19:25:11,326|DEBUG|plugin.py:89] AJAX gdrive_scan load
+[2020-05-07 19:28:42,619|DEBUG|plugin.py:70] DETAIL gdrive_scan list
+[2020-05-07 19:28:43,029|DEBUG|plugin.py:89] AJAX gdrive_scan filelist
+[2020-05-07 19:28:43,055|DEBUG|logic.py:242] ModelGDriveScanFile count:0
+[2020-05-07 23:19:59,201|DEBUG|plugin.py:46] plugin_load:gdrive_scan
+[2020-05-08 05:19:58,567|DEBUG|plugin.py:54] plugin_unload:gdrive_scan
+[2020-05-08 05:21:16,450|DEBUG|plugin.py:46] plugin_load:gdrive_scan
+[2020-05-08 11:22:05,812|DEBUG|plugin.py:54] plugin_unload:gdrive_scan
+[2020-05-08 11:23:18,277|DEBUG|plugin.py:46] plugin_load:gdrive_scan
+[2020-05-08 12:12:50,303|DEBUG|plugin.py:46] plugin_load:gdrive_scan
+[2020-05-08 18:13:03,100|DEBUG|plugin.py:54] plugin_unload:gdrive_scan
+[2020-05-08 18:13:54,303|DEBUG|plugin.py:46] plugin_load:gdrive_scan
+[2020-05-09 00:14:22,702|DEBUG|plugin.py:54] plugin_unload:gdrive_scan
+[2020-05-09 00:15:13,371|DEBUG|plugin.py:46] plugin_load:gdrive_scan
+[2020-05-09 06:15:53,764|DEBUG|plugin.py:54] plugin_unload:gdrive_scan
+[2020-05-09 06:16:38,534|DEBUG|plugin.py:46] plugin_load:gdrive_scan
+[2020-05-09 12:16:48,898|DEBUG|plugin.py:54] plugin_unload:gdrive_scan
+[2020-05-09 12:17:32,830|DEBUG|plugin.py:46] plugin_load:gdrive_scan
+[2020-05-09 18:17:56,878|DEBUG|plugin.py:54] plugin_unload:gdrive_scan
+[2020-05-09 18:18:37,308|DEBUG|plugin.py:46] plugin_load:gdrive_scan
+[2020-05-10 00:19:22,641|DEBUG|plugin.py:54] plugin_unload:gdrive_scan
+[2020-05-10 00:20:03,052|DEBUG|plugin.py:46] plugin_load:gdrive_scan
+[2020-05-10 06:20:34,465|DEBUG|plugin.py:54] plugin_unload:gdrive_scan
+[2020-05-10 06:21:12,414|DEBUG|plugin.py:46] plugin_load:gdrive_scan
+[2020-05-10 12:21:25,840|DEBUG|plugin.py:54] plugin_unload:gdrive_scan
+[2020-05-10 12:22:12,675|DEBUG|plugin.py:46] plugin_load:gdrive_scan
+[2020-05-10 18:22:51,603|DEBUG|plugin.py:54] plugin_unload:gdrive_scan
+[2020-05-10 18:23:36,032|DEBUG|plugin.py:46] plugin_load:gdrive_scan
+[2020-05-11 00:24:15,414|DEBUG|plugin.py:54] plugin_unload:gdrive_scan
+[2020-05-11 00:25:19,256|DEBUG|plugin.py:46] plugin_load:gdrive_scan
+[2020-05-11 06:25:56,673|DEBUG|plugin.py:54] plugin_unload:gdrive_scan
+[2020-05-11 06:26:55,797|DEBUG|plugin.py:46] plugin_load:gdrive_scan
+[2020-05-11 12:27:52,177|DEBUG|plugin.py:54] plugin_unload:gdrive_scan
+[2020-05-11 12:28:43,217|DEBUG|plugin.py:46] plugin_load:gdrive_scan

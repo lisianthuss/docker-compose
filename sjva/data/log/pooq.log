@@ -1,0 +1,26 @@
+[2020-05-07 18:54:40,832|DEBUG|D:\Cloud\CloudStation\SJ\SJVA\plugin\pooq\__init__.py:42] plugin_load:pooq
+[2020-05-07 18:54:40,838|DEBUG|d:\Cloud\CloudStation\SJ\SJVA\plugin\pooq\basic.py:47] setting count : 0
+[2020-05-07 18:54:41,019|ERROR|D:\Cloud\CloudStation\SJ\SJVA\plugin\pooq\pooq_api.py:76] Exception:HTTP Error 503: Service Temporarily Unavailable
+[2020-05-07 18:54:41,023|ERROR|D:\Cloud\CloudStation\SJ\SJVA\plugin\pooq\pooq_api.py:77] Traceback (most recent call last):
+  File "D:\Cloud\CloudStation\SJ\SJVA\plugin\pooq\pooq_api.py", line 72, in login_function
+  File "/usr/local/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/local/lib/python2.7/urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "/usr/local/lib/python2.7/urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/local/lib/python2.7/urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "/usr/local/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/usr/local/lib/python2.7/urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 503: Service Temporarily Unavailable
+
+[2020-05-07 18:54:41,029|ERROR|D:\Cloud\CloudStation\SJ\SJVA\plugin\pooq\pooq_api.py:58] Exception:'NoneType' object has no attribute '__getitem__'
+[2020-05-07 18:54:41,031|ERROR|D:\Cloud\CloudStation\SJ\SJVA\plugin\pooq\pooq_api.py:59] Traceback (most recent call last):
+  File "D:\Cloud\CloudStation\SJ\SJVA\plugin\pooq\pooq_api.py", line 51, in do_login
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+[2020-05-07 18:54:41,031|DEBUG|d:\Cloud\CloudStation\SJ\SJVA\plugin\pooq\basic.py:75] PooqBasic login:None
+[2020-05-07 18:54:41,037|DEBUG|d:\Cloud\CloudStation\SJ\SJVA\plugin\pooq\auto.py:50] setting count : 7

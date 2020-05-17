@@ -1,0 +1,26 @@
+[2020-05-07 19:38:32,320|DEBUG|plugin.py:124] API epg tvheadend
+[2020-05-07 19:38:32,651|ERROR|logic.py:155] Exception:'NoneType' object has no attribute '__getitem__'
+[2020-05-07 19:38:32,654|ERROR|logic.py:156] Traceback (most recent call last):
+  File "/home/coder/project/SJ/SJVA2/plugin/epg/logic.py", line 144, in make_xml_task
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+[2020-05-07 19:38:32,655|DEBUG|logic.py:160] 2020-05-07 19:38:32.654972
+[2020-05-07 19:38:32,664|ERROR|logic.py:203] Exception:'NoneType' object has no attribute '__getitem__'
+[2020-05-07 19:38:32,665|ERROR|logic.py:204] Traceback (most recent call last):
+  File "/home/coder/project/SJ/SJVA2/plugin/epg/logic.py", line 167, in make_xml_task
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+[2020-05-07 19:38:44,818|DEBUG|plugin.py:124] API epg klive
+[2020-05-07 19:38:44,940|DEBUG|logic.py:325] EPG2XML end....
+[2020-05-07 19:38:53,789|DEBUG|plugin.py:124] API epg klive_lc
+[2020-05-07 19:38:53,890|DEBUG|logic.py:325] EPG2XML end....
+[2020-05-07 19:38:58,683|DEBUG|plugin.py:124] API epg plex_lc
+[2020-05-07 19:38:58,789|DEBUG|logic.py:325] EPG2XML end....
+[2020-05-07 19:39:03,223|DEBUG|plugin.py:124] API epg hdhomerun
+[2020-05-07 19:39:03,248|ERROR|logic.py:311] Exception:No module named hdhomerun
+[2020-05-07 19:39:03,251|ERROR|logic.py:312] Traceback (most recent call last):
+  File "/home/coder/project/SJ/SJVA2/plugin/epg/logic.py", line 281, in make_xml_task
+  File "/usr/local/lib/python2.7/site-packages/gevent/builtins.py", line 96, in __import__
+    result = _import(*args, **kwargs)
+ImportError: No module named hdhomerun
+

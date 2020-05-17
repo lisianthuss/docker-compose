@@ -1,0 +1,215 @@
+[2020-05-07 19:17:51,220|DEBUG|plugin.py:86] AJAX tvheadend channel_list
+[2020-05-07 19:17:51,258|ERROR|logic.py:129] Exception:Invalid URL '/api/channel/grid?start=0&limit=999999': No schema supplied. Perhaps you meant http:///api/channel/grid?start=0&limit=999999?
+[2020-05-07 19:17:51,263|ERROR|logic.py:130] Traceback (most recent call last):
+  File "/home/coder/project/SJ/SJVA2/plugin/tvheadend/logic.py", line 125, in get_response
+  File "/usr/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/requests/sessions.py", line 519, in request
+    prep = self.prepare_request(req)
+  File "/usr/local/lib/python2.7/site-packages/requests/sessions.py", line 462, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "/usr/local/lib/python2.7/site-packages/requests/models.py", line 313, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python2.7/site-packages/requests/models.py", line 387, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL '/api/channel/grid?start=0&limit=999999': No schema supplied. Perhaps you meant http:///api/channel/grid?start=0&limit=999999?
+
+[2020-05-07 19:17:51,265|ERROR|logic.py:137] Exception:Invalid URL '/api/channel/grid?start=0&limit=999999': No schema supplied. Perhaps you meant http:///api/channel/grid?start=0&limit=999999?
+[2020-05-07 19:17:51,267|ERROR|logic.py:138] Traceback (most recent call last):
+  File "/home/coder/project/SJ/SJVA2/plugin/tvheadend/logic.py", line 133, in get_response
+  File "/usr/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/requests/sessions.py", line 519, in request
+    prep = self.prepare_request(req)
+  File "/usr/local/lib/python2.7/site-packages/requests/sessions.py", line 462, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "/usr/local/lib/python2.7/site-packages/requests/models.py", line 313, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python2.7/site-packages/requests/models.py", line 387, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL '/api/channel/grid?start=0&limit=999999': No schema supplied. Perhaps you meant http:///api/channel/grid?start=0&limit=999999?
+
+[2020-05-07 19:17:51,268|ERROR|logic.py:225] Exception:'NoneType' object has no attribute 'json'
+[2020-05-07 19:17:51,271|ERROR|logic.py:226] Traceback (most recent call last):
+  File "/home/coder/project/SJ/SJVA2/plugin/tvheadend/logic.py", line 185, in channel_list
+AttributeError: 'NoneType' object has no attribute 'json'
+
+[2020-05-07 19:29:33,585|DEBUG|plugin.py:86] AJAX tvheadend channel_list
+[2020-05-07 19:29:33,603|ERROR|logic.py:129] Exception:Invalid URL '/api/channel/grid?start=0&limit=999999': No schema supplied. Perhaps you meant http:///api/channel/grid?start=0&limit=999999?
+[2020-05-07 19:29:33,604|ERROR|logic.py:130] Traceback (most recent call last):
+  File "/home/coder/project/SJ/SJVA2/plugin/tvheadend/logic.py", line 125, in get_response
+  File "/usr/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/requests/sessions.py", line 519, in request
+    prep = self.prepare_request(req)
+  File "/usr/local/lib/python2.7/site-packages/requests/sessions.py", line 462, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "/usr/local/lib/python2.7/site-packages/requests/models.py", line 313, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python2.7/site-packages/requests/models.py", line 387, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL '/api/channel/grid?start=0&limit=999999': No schema supplied. Perhaps you meant http:///api/channel/grid?start=0&limit=999999?
+
+[2020-05-07 19:29:33,607|ERROR|logic.py:137] Exception:Invalid URL '/api/channel/grid?start=0&limit=999999': No schema supplied. Perhaps you meant http:///api/channel/grid?start=0&limit=999999?
+[2020-05-07 19:29:33,608|ERROR|logic.py:138] Traceback (most recent call last):
+  File "/home/coder/project/SJ/SJVA2/plugin/tvheadend/logic.py", line 133, in get_response
+  File "/usr/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/requests/sessions.py", line 519, in request
+    prep = self.prepare_request(req)
+  File "/usr/local/lib/python2.7/site-packages/requests/sessions.py", line 462, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "/usr/local/lib/python2.7/site-packages/requests/models.py", line 313, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python2.7/site-packages/requests/models.py", line 387, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL '/api/channel/grid?start=0&limit=999999': No schema supplied. Perhaps you meant http:///api/channel/grid?start=0&limit=999999?
+
+[2020-05-07 19:29:33,610|ERROR|logic.py:225] Exception:'NoneType' object has no attribute 'json'
+[2020-05-07 19:29:33,611|ERROR|logic.py:226] Traceback (most recent call last):
+  File "/home/coder/project/SJ/SJVA2/plugin/tvheadend/logic.py", line 185, in channel_list
+AttributeError: 'NoneType' object has no attribute 'json'
+
+[2020-05-07 19:34:34,076|DEBUG|plugin.py:86] AJAX tvheadend server_info
+[2020-05-07 19:34:37,851|DEBUG|plugin.py:86] AJAX tvheadend server_info
+[2020-05-07 19:34:42,702|DEBUG|plugin.py:86] AJAX tvheadend server_info
+[2020-05-07 19:34:42,859|ERROR|logic.py:129] Exception:HTTPConnectionPool(host='luel.duckdns.org', port=9991): Max retries exceeded with url: /api/serverinfo (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xb3b55f90>: Failed to establish a new connection: [Errno 111] Connection refused',))
+[2020-05-07 19:34:42,862|ERROR|logic.py:130] Traceback (most recent call last):
+  File "/home/coder/project/SJ/SJVA2/plugin/tvheadend/logic.py", line 125, in get_response
+  File "/usr/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='luel.duckdns.org', port=9991): Max retries exceeded with url: /api/serverinfo (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xb3b55f90>: Failed to establish a new connection: [Errno 111] Connection refused',))
+
+[2020-05-07 19:34:43,012|ERROR|logic.py:137] Exception:HTTPConnectionPool(host='luel.duckdns.org', port=9991): Max retries exceeded with url: /api/serverinfo (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xb38bc870>: Failed to establish a new connection: [Errno 111] Connection refused',))
+[2020-05-07 19:34:43,014|ERROR|logic.py:138] Traceback (most recent call last):
+  File "/home/coder/project/SJ/SJVA2/plugin/tvheadend/logic.py", line 133, in get_response
+  File "/usr/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='luel.duckdns.org', port=9991): Max retries exceeded with url: /api/serverinfo (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xb38bc870>: Failed to establish a new connection: [Errno 111] Connection refused',))
+
+[2020-05-07 19:34:43,024|ERROR|logic.py:148] Exception:HTTPConnectionPool(host='luel.duckdns.org', port=9991): Max retries exceeded with url: /api/serverinfo (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xb38bcd50>: Failed to establish a new connection: [Errno 111] Connection refused',))
+[2020-05-07 19:34:43,026|ERROR|logic.py:149] Traceback (most recent call last):
+  File "/home/coder/project/SJ/SJVA2/plugin/tvheadend/logic.py", line 144, in get_response
+  File "/usr/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='luel.duckdns.org', port=9991): Max retries exceeded with url: /api/serverinfo (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xb38bcd50>: Failed to establish a new connection: [Errno 111] Connection refused',))
+
+[2020-05-07 19:38:09,246|DEBUG|plugin.py:86] AJAX tvheadend channel_list
+[2020-05-07 19:38:09,277|ERROR|logic.py:129] Exception:Invalid URL '/api/channel/grid?start=0&limit=999999': No schema supplied. Perhaps you meant http:///api/channel/grid?start=0&limit=999999?
+[2020-05-07 19:38:09,280|ERROR|logic.py:130] Traceback (most recent call last):
+  File "/home/coder/project/SJ/SJVA2/plugin/tvheadend/logic.py", line 125, in get_response
+  File "/usr/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/requests/sessions.py", line 519, in request
+    prep = self.prepare_request(req)
+  File "/usr/local/lib/python2.7/site-packages/requests/sessions.py", line 462, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "/usr/local/lib/python2.7/site-packages/requests/models.py", line 313, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python2.7/site-packages/requests/models.py", line 387, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL '/api/channel/grid?start=0&limit=999999': No schema supplied. Perhaps you meant http:///api/channel/grid?start=0&limit=999999?
+
+[2020-05-07 19:38:09,284|ERROR|logic.py:137] Exception:Invalid URL '/api/channel/grid?start=0&limit=999999': No schema supplied. Perhaps you meant http:///api/channel/grid?start=0&limit=999999?
+[2020-05-07 19:38:09,286|ERROR|logic.py:138] Traceback (most recent call last):
+  File "/home/coder/project/SJ/SJVA2/plugin/tvheadend/logic.py", line 133, in get_response
+  File "/usr/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/requests/sessions.py", line 519, in request
+    prep = self.prepare_request(req)
+  File "/usr/local/lib/python2.7/site-packages/requests/sessions.py", line 462, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "/usr/local/lib/python2.7/site-packages/requests/models.py", line 313, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python2.7/site-packages/requests/models.py", line 387, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL '/api/channel/grid?start=0&limit=999999': No schema supplied. Perhaps you meant http:///api/channel/grid?start=0&limit=999999?
+
+[2020-05-07 19:38:09,288|ERROR|logic.py:225] Exception:'NoneType' object has no attribute 'json'
+[2020-05-07 19:38:09,289|ERROR|logic.py:226] Traceback (most recent call last):
+  File "/home/coder/project/SJ/SJVA2/plugin/tvheadend/logic.py", line 185, in channel_list
+AttributeError: 'NoneType' object has no attribute 'json'
+
+[2020-05-07 19:38:32,638|ERROR|logic.py:129] Exception:Invalid URL '/api/channel/grid?start=0&limit=999999': No schema supplied. Perhaps you meant http:///api/channel/grid?start=0&limit=999999?
+[2020-05-07 19:38:32,643|ERROR|logic.py:130] Traceback (most recent call last):
+  File "/home/coder/project/SJ/SJVA2/plugin/tvheadend/logic.py", line 125, in get_response
+  File "/usr/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/requests/sessions.py", line 519, in request
+    prep = self.prepare_request(req)
+  File "/usr/local/lib/python2.7/site-packages/requests/sessions.py", line 462, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "/usr/local/lib/python2.7/site-packages/requests/models.py", line 313, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python2.7/site-packages/requests/models.py", line 387, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL '/api/channel/grid?start=0&limit=999999': No schema supplied. Perhaps you meant http:///api/channel/grid?start=0&limit=999999?
+
+[2020-05-07 19:38:32,646|ERROR|logic.py:137] Exception:Invalid URL '/api/channel/grid?start=0&limit=999999': No schema supplied. Perhaps you meant http:///api/channel/grid?start=0&limit=999999?
+[2020-05-07 19:38:32,647|ERROR|logic.py:138] Traceback (most recent call last):
+  File "/home/coder/project/SJ/SJVA2/plugin/tvheadend/logic.py", line 133, in get_response
+  File "/usr/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/requests/sessions.py", line 519, in request
+    prep = self.prepare_request(req)
+  File "/usr/local/lib/python2.7/site-packages/requests/sessions.py", line 462, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "/usr/local/lib/python2.7/site-packages/requests/models.py", line 313, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python2.7/site-packages/requests/models.py", line 387, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL '/api/channel/grid?start=0&limit=999999': No schema supplied. Perhaps you meant http:///api/channel/grid?start=0&limit=999999?
+
+[2020-05-07 19:38:32,648|ERROR|logic.py:225] Exception:'NoneType' object has no attribute 'json'
+[2020-05-07 19:38:32,650|ERROR|logic.py:226] Traceback (most recent call last):
+  File "/home/coder/project/SJ/SJVA2/plugin/tvheadend/logic.py", line 185, in channel_list
+AttributeError: 'NoneType' object has no attribute 'json'
+
+[2020-05-07 20:08:22,294|DEBUG|plugin.py:86] AJAX tvheadend setting_save
+[2020-05-07 20:08:22,297|DEBUG|logic.py:95] Key:plex_profile Value:pass
+[2020-05-07 20:08:22,308|DEBUG|logic.py:95] Key:tvh_auth Value:
+[2020-05-07 20:08:22,314|DEBUG|logic.py:95] Key:tvh_password Value:3mkm300s
+[2020-05-07 20:08:22,319|DEBUG|logic.py:95] Key:tvh_url Value:
+[2020-05-07 20:08:22,324|DEBUG|logic.py:95] Key:tvh_username Value:luel789
+[2020-05-07 20:08:22,329|DEBUG|logic.py:95] Key:player_profile Value:webtv-h264-aac-matroska
+[2020-05-07 20:08:35,791|DEBUG|plugin.py:86] AJAX tvheadend server_info

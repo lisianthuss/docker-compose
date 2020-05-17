@@ -1,0 +1,4 @@
+[2020-05-07 19:28:48,524|DEBUG|plugin.py:199] ffmpeg socketio connect
+[2020-05-07 19:29:27,752|DEBUG|plugin.py:199] ffmpeg socketio connect
+[2020-05-07 19:29:30,421|DEBUG|plugin.py:203] ffmpeg socketio disconnect
+[2020-05-07 19:34:10,723|DEBUG|plugin.py:203] ffmpeg socketio disconnect

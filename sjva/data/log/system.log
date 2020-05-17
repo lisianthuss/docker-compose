@@ -1,0 +1,214 @@
+[2020-05-07 18:54:30,191|DEBUG|D:\Cloud\CloudStation\SJ\SJVA\lib\system\__init__.py:42] plugin_load:system
+[2020-05-07 18:54:30,202|DEBUG|D:\Cloud\CloudStation\SJ\SJVA\lib\system\logic.py:56] setting count : 0
+[2020-05-07 18:55:17,485|DEBUG|D:\Cloud\CloudStation\SJ\SJVA\lib\system\__init__.py:113] System AJAX sub:info
+[2020-05-07 18:55:17,629|DEBUG|D:\Cloud\CloudStation\SJ\SJVA\lib\system\__init__.py:229] Info connect:[]
+[2020-05-07 18:55:59,561|DEBUG|D:\Cloud\CloudStation\SJ\SJVA\lib\system\__init__.py:237] Info disconnect:['a79abbfeeb37465aa5feaefd69ea57d9']
+[2020-05-07 18:55:59,969|DEBUG|D:\Cloud\CloudStation\SJ\SJVA\lib\system\__init__.py:113] System AJAX sub:info
+[2020-05-07 18:56:00,048|DEBUG|D:\Cloud\CloudStation\SJ\SJVA\lib\system\__init__.py:229] Info connect:[]
+[2020-05-07 18:56:10,808|DEBUG|D:\Cloud\CloudStation\SJ\SJVA\lib\system\__init__.py:237] Info disconnect:['3ae6d2fac3b44009af85f70fdf3a78a5']
+[2020-05-07 18:56:11,235|DEBUG|D:\Cloud\CloudStation\SJ\SJVA\lib\system\__init__.py:113] System AJAX sub:info
+[2020-05-07 18:56:11,368|DEBUG|D:\Cloud\CloudStation\SJ\SJVA\lib\system\__init__.py:229] Info connect:[]
+[2020-05-07 18:56:31,787|DEBUG|D:\Cloud\CloudStation\SJ\SJVA\lib\system\__init__.py:237] Info disconnect:['76981cd188ad4487bf2c26ef9ed6ec3e']
+[2020-05-07 18:56:38,970|DEBUG|D:\Cloud\CloudStation\SJ\SJVA\lib\system\__init__.py:55] System SUB:setting
+[2020-05-07 18:57:10,785|DEBUG|D:\Cloud\CloudStation\SJ\SJVA\lib\system\__init__.py:113] System AJAX sub:ddns_test
+[2020-05-07 18:57:10,960|ERROR|D:\Cloud\CloudStation\SJ\SJVA\lib\system\__init__.py:140] Exception:HTTPConnectionPool(host='luel.duckdns.org', port=9999): Max retries exceeded with url: /version (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xb466a3f0>: Failed to establish a new connection: [Errno 111] Connection refused',))
+[2020-05-07 18:57:10,964|ERROR|D:\Cloud\CloudStation\SJ\SJVA\lib\system\__init__.py:141] Traceback (most recent call last):
+  File "D:\Cloud\CloudStation\SJ\SJVA\lib\system\__init__.py", line 135, in ajax
+  File "/usr/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='luel.duckdns.org', port=9999): Max retries exceeded with url: /version (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xb466a3f0>: Failed to establish a new connection: [Errno 111] Connection refused',))
+
+[2020-05-07 18:58:16,456|DEBUG|D:\Cloud\CloudStation\SJ\SJVA\lib\system\__init__.py:113] System AJAX sub:ddns_test
+[2020-05-07 18:58:20,446|DEBUG|D:\Cloud\CloudStation\SJ\SJVA\lib\system\__init__.py:113] System AJAX sub:setting_save
+[2020-05-07 18:58:20,449|DEBUG|D:\Cloud\CloudStation\SJ\SJVA\lib\system\logic.py:141] Key:id Value:luel
+[2020-05-07 18:58:20,457|DEBUG|D:\Cloud\CloudStation\SJ\SJVA\lib\system\logic.py:141] Key:pw Value:luel
+[2020-05-07 18:58:20,463|DEBUG|D:\Cloud\CloudStation\SJ\SJVA\lib\system\logic.py:141] Key:auto_restart_hour Value:6
+[2020-05-07 18:58:20,468|DEBUG|D:\Cloud\CloudStation\SJ\SJVA\lib\system\logic.py:141] Key:port Value:9999
+[2020-05-07 18:58:20,473|DEBUG|D:\Cloud\CloudStation\SJ\SJVA\lib\system\logic.py:141] Key:ddns Value:http://luel.duckdns.org:9999
+[2020-05-07 18:58:32,163|DEBUG|D:\Cloud\CloudStation\SJ\SJVA\lib\system\__init__.py:55] System SUB:setting
+[2020-05-07 19:11:28,004|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-07 19:11:28,018|DEBUG|logic.py:114] setting count : 8
+[2020-05-07 19:11:29,814|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-07 19:11:30,874|DEBUG|logic.py:114] setting count : 27
+[2020-05-07 19:15:51,943|DEBUG|plugin.py:88] System SUB:home
+[2020-05-07 19:15:53,637|DEBUG|plugin.py:223] System AJAX sub:info
+[2020-05-07 19:15:53,739|DEBUG|plugin.py:391] Info connect:[]
+[2020-05-07 19:15:59,519|DEBUG|plugin.py:88] System SUB:home
+[2020-05-07 19:15:59,594|DEBUG|plugin.py:399] Info disconnect:['619d0d2c62b84e07a8d8d11b881e5b9c']
+[2020-05-07 19:15:59,948|DEBUG|plugin.py:223] System AJAX sub:info
+[2020-05-07 19:16:00,024|DEBUG|plugin.py:391] Info connect:[]
+[2020-05-07 19:16:09,164|DEBUG|plugin.py:88] System SUB:setting
+[2020-05-07 19:16:09,564|DEBUG|plugin.py:399] Info disconnect:['51f76232125247b5869ac80aa1b2b536']
+[2020-05-07 19:16:10,100|DEBUG|plugin.py:223] System AJAX sub:get_link_list
+[2020-05-07 19:16:11,546|DEBUG|plugin.py:223] System AJAX sub:ddns_test
+[2020-05-07 19:26:02,299|DEBUG|plugin.py:88] System SUB:home
+[2020-05-07 19:26:03,629|DEBUG|plugin.py:223] System AJAX sub:info
+[2020-05-07 19:26:03,780|DEBUG|plugin.py:391] Info connect:[]
+[2020-05-07 19:26:07,238|DEBUG|plugin.py:399] Info disconnect:['c50b20ef620745c2a3ca68ff4992eca4']
+[2020-05-07 19:34:31,266|DEBUG|plugin.py:88] System SUB:home
+[2020-05-07 19:34:32,185|DEBUG|plugin.py:223] System AJAX sub:info
+[2020-05-07 19:34:32,317|DEBUG|plugin.py:391] Info connect:[]
+[2020-05-07 19:34:33,446|DEBUG|plugin.py:399] Info disconnect:['ff29fbe07b004530bca6c3e8092c4651']
+[2020-05-07 19:34:56,172|DEBUG|plugin.py:88] System SUB:setting
+[2020-05-07 19:34:56,841|DEBUG|plugin.py:223] System AJAX sub:get_link_list
+[2020-05-07 19:35:07,770|DEBUG|plugin.py:223] System AJAX sub:setting_save_system
+[2020-05-07 19:35:07,773|DEBUG|logic.py:236] Key:url_filebrowser Value:http://localhost:9998
+[2020-05-07 19:35:07,782|DEBUG|logic.py:236] Key:log_level Value:10
+[2020-05-07 19:35:07,788|DEBUG|logic.py:236] Key:ddns Value:http://luel.duckdns.org:9999
+[2020-05-07 19:35:07,795|DEBUG|logic.py:236] Key:port Value:9999
+[2020-05-07 19:35:07,801|DEBUG|logic.py:236] Key:auth Value:3mkm300s
+[2020-05-07 19:35:07,805|DEBUG|logic.py:236] Key:auto_restart_hour Value:6
+[2020-05-07 19:36:05,212|DEBUG|plugin.py:88] System SUB:setting
+[2020-05-07 19:36:05,873|DEBUG|plugin.py:223] System AJAX sub:get_link_list
+[2020-05-07 19:36:46,598|DEBUG|plugin.py:88] System SUB:setting
+[2020-05-07 19:36:47,235|DEBUG|plugin.py:223] System AJAX sub:get_link_list
+[2020-05-07 19:36:53,891|DEBUG|plugin.py:88] System SUB:information
+[2020-05-07 19:37:00,551|DEBUG|plugin.py:88] System SUB:setting
+[2020-05-07 19:37:01,220|DEBUG|plugin.py:223] System AJAX sub:get_link_list
+[2020-05-07 19:37:28,979|DEBUG|plugin.py:198] System AJAX sub:env
+[2020-05-07 19:37:28,981|DEBUG|logic_env.py:97] 11111111
+[2020-05-07 19:37:29,182|DEBUG|logic_env.py:99] 3333333333
+[2020-05-07 19:37:29,182|DEBUG|logic_env.py:100] 1fbd7a37-dab4-4ce0-86b9-628ac4ad15cd
+[2020-05-07 19:37:29,194|DEBUG|logic_env.py:127] !!!! celery_test2222
+[2020-05-07 19:37:30,418|DEBUG|logic_env.py:106] 4444444444
+[2020-05-07 19:37:30,419|DEBUG|logic_env.py:110] 222222222
+[2020-05-07 19:37:50,044|DEBUG|plugin.py:88] System SUB:plugin
+[2020-05-07 19:37:50,569|DEBUG|plugin.py:223] System AJAX sub:plugin_list
+[2020-05-07 19:37:50,571|DEBUG|logic_plugin.py:150] []
+[2020-05-07 19:37:53,779|DEBUG|plugin.py:88] System SUB:information
+[2020-05-07 19:37:55,855|DEBUG|plugin.py:88] System SUB:log
+[2020-05-07 19:41:28,442|DEBUG|plugin.py:88] System SUB:home
+[2020-05-07 19:41:29,294|DEBUG|plugin.py:223] System AJAX sub:info
+[2020-05-07 19:41:29,414|DEBUG|plugin.py:391] Info connect:[]
+[2020-05-07 19:41:31,845|DEBUG|plugin.py:399] Info disconnect:['f18f91519e9740a7aaf4aa03073d29cc']
+[2020-05-07 19:44:58,113|DEBUG|plugin.py:88] System SUB:setting
+[2020-05-07 19:44:58,956|DEBUG|plugin.py:223] System AJAX sub:get_link_list
+[2020-05-07 20:08:58,859|DEBUG|plugin.py:88] System SUB:setting
+[2020-05-07 20:08:59,483|DEBUG|plugin.py:223] System AJAX sub:get_link_list
+[2020-05-07 20:09:03,646|DEBUG|plugin.py:88] System SUB:information
+[2020-05-07 20:09:06,149|DEBUG|plugin.py:88] System SUB:setting
+[2020-05-07 20:09:06,846|DEBUG|plugin.py:223] System AJAX sub:get_link_list
+[2020-05-07 20:09:11,543|DEBUG|plugin.py:88] System SUB:information
+[2020-05-07 20:10:23,747|DEBUG|plugin.py:88] System SUB:home
+[2020-05-07 20:10:25,429|DEBUG|plugin.py:223] System AJAX sub:info
+[2020-05-07 20:10:25,574|DEBUG|plugin.py:391] Info connect:[]
+[2020-05-07 20:10:29,869|DEBUG|plugin.py:399] Info disconnect:['6c9bb63d1c0d44a49c79f667c8ae3b69']
+[2020-05-07 20:10:37,542|DEBUG|plugin.py:223] System AJAX sub:info
+[2020-05-07 20:10:37,804|DEBUG|plugin.py:391] Info connect:[]
+[2020-05-07 20:16:08,484|DEBUG|plugin.py:399] Info disconnect:['cc15e929410c4970a23e2a393d156b62']
+[2020-05-07 21:39:39,147|DEBUG|plugin.py:88] System SUB:home
+[2020-05-07 21:39:40,846|DEBUG|plugin.py:223] System AJAX sub:info
+[2020-05-07 21:39:41,040|DEBUG|plugin.py:391] Info connect:[]
+[2020-05-07 21:39:44,217|DEBUG|plugin.py:399] Info disconnect:['0ec1e38e82c24433bc7f1da5bdd81c89']
+[2020-05-07 23:19:56,464|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-07 23:19:56,479|DEBUG|logic.py:114] setting count : 57
+[2020-05-07 23:19:56,849|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-07 23:19:56,901|DEBUG|logic.py:114] setting count : 57
+[2020-05-08 05:19:58,575|DEBUG|plugin.py:69] plugin_load:system
+[2020-05-08 05:19:58,577|DEBUG|logic_selenium.py:153] None
+[2020-05-08 05:21:11,505|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-08 05:21:11,522|DEBUG|logic.py:114] setting count : 57
+[2020-05-08 05:21:14,702|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-08 05:21:14,716|DEBUG|logic.py:114] setting count : 57
+[2020-05-08 07:13:40,139|DEBUG|plugin.py:88] System SUB:home
+[2020-05-08 07:13:41,170|DEBUG|plugin.py:223] System AJAX sub:info
+[2020-05-08 07:13:41,310|DEBUG|plugin.py:391] Info connect:[]
+[2020-05-08 07:13:47,938|DEBUG|plugin.py:399] Info disconnect:['fcd03b31c1664807be55d1f1c5f8f880']
+[2020-05-08 11:22:05,814|DEBUG|plugin.py:69] plugin_load:system
+[2020-05-08 11:22:05,815|DEBUG|logic_selenium.py:153] None
+[2020-05-08 11:23:15,676|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-08 11:23:15,689|DEBUG|logic.py:114] setting count : 57
+[2020-05-08 11:23:16,141|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-08 11:23:16,157|DEBUG|logic.py:114] setting count : 57
+[2020-05-08 12:12:47,254|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-08 12:12:47,267|DEBUG|logic.py:114] setting count : 57
+[2020-05-08 12:12:47,383|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-08 12:12:47,399|DEBUG|logic.py:114] setting count : 57
+[2020-05-08 18:13:03,102|DEBUG|plugin.py:69] plugin_load:system
+[2020-05-08 18:13:03,103|DEBUG|logic_selenium.py:153] None
+[2020-05-08 18:13:47,610|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-08 18:13:47,625|DEBUG|logic.py:114] setting count : 57
+[2020-05-08 18:13:47,806|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-08 18:13:47,819|DEBUG|logic.py:114] setting count : 57
+[2020-05-09 00:14:22,705|DEBUG|plugin.py:69] plugin_load:system
+[2020-05-09 00:14:22,705|DEBUG|logic_selenium.py:153] None
+[2020-05-09 00:15:11,137|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-09 00:15:11,151|DEBUG|logic.py:114] setting count : 57
+[2020-05-09 00:15:11,201|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-09 00:15:11,216|DEBUG|logic.py:114] setting count : 57
+[2020-05-09 06:15:53,766|DEBUG|plugin.py:69] plugin_load:system
+[2020-05-09 06:15:53,767|DEBUG|logic_selenium.py:153] None
+[2020-05-09 06:16:35,583|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-09 06:16:35,598|DEBUG|logic.py:114] setting count : 57
+[2020-05-09 06:16:35,799|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-09 06:16:35,813|DEBUG|logic.py:114] setting count : 57
+[2020-05-09 12:16:48,900|DEBUG|plugin.py:69] plugin_load:system
+[2020-05-09 12:16:48,901|DEBUG|logic_selenium.py:153] None
+[2020-05-09 12:17:27,727|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-09 12:17:27,743|DEBUG|logic.py:114] setting count : 57
+[2020-05-09 12:17:27,903|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-09 12:17:27,916|DEBUG|logic.py:114] setting count : 57
+[2020-05-09 18:17:56,880|DEBUG|plugin.py:69] plugin_load:system
+[2020-05-09 18:17:56,880|DEBUG|logic_selenium.py:153] None
+[2020-05-09 18:18:32,997|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-09 18:18:33,011|DEBUG|logic.py:114] setting count : 57
+[2020-05-09 18:18:35,398|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-09 18:18:35,428|DEBUG|logic.py:114] setting count : 57
+[2020-05-09 21:35:34,834|DEBUG|plugin.py:88] System SUB:home
+[2020-05-09 21:35:36,624|DEBUG|plugin.py:223] System AJAX sub:info
+[2020-05-09 21:35:36,762|DEBUG|plugin.py:391] Info connect:[]
+[2020-05-09 21:35:39,004|DEBUG|plugin.py:399] Info disconnect:['26cdca15ab6c43878bc34c2505d6be3b']
+[2020-05-10 00:19:22,644|DEBUG|plugin.py:69] plugin_load:system
+[2020-05-10 00:19:22,645|DEBUG|logic_selenium.py:153] None
+[2020-05-10 00:20:00,852|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-10 00:20:00,867|DEBUG|logic.py:114] setting count : 57
+[2020-05-10 00:20:01,061|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-10 00:20:01,074|DEBUG|logic.py:114] setting count : 57
+[2020-05-10 06:20:34,469|DEBUG|plugin.py:69] plugin_load:system
+[2020-05-10 06:20:34,471|DEBUG|logic_selenium.py:153] None
+[2020-05-10 06:21:07,277|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-10 06:21:07,292|DEBUG|logic.py:114] setting count : 57
+[2020-05-10 06:21:07,486|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-10 06:21:07,500|DEBUG|logic.py:114] setting count : 57
+[2020-05-10 12:21:25,846|DEBUG|plugin.py:69] plugin_load:system
+[2020-05-10 12:21:25,847|DEBUG|logic_selenium.py:153] None
+[2020-05-10 12:22:08,263|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-10 12:22:08,277|DEBUG|logic.py:114] setting count : 57
+[2020-05-10 12:22:08,441|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-10 12:22:08,455|DEBUG|logic.py:114] setting count : 57
+[2020-05-10 18:22:51,607|DEBUG|plugin.py:69] plugin_load:system
+[2020-05-10 18:22:51,608|DEBUG|logic_selenium.py:153] None
+[2020-05-10 18:23:32,232|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-10 18:23:32,247|DEBUG|logic.py:114] setting count : 57
+[2020-05-10 18:23:32,440|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-10 18:23:32,454|DEBUG|logic.py:114] setting count : 57
+[2020-05-10 23:20:52,040|DEBUG|plugin.py:88] System SUB:home
+[2020-05-10 23:20:53,777|DEBUG|plugin.py:223] System AJAX sub:info
+[2020-05-10 23:20:53,914|DEBUG|plugin.py:391] Info connect:[]
+[2020-05-10 23:20:55,833|DEBUG|plugin.py:399] Info disconnect:['c49908e8e7b84f9ca3076cce5ec2cd30']
+[2020-05-11 00:24:15,420|DEBUG|plugin.py:69] plugin_load:system
+[2020-05-11 00:24:15,422|DEBUG|logic_selenium.py:153] None
+[2020-05-11 00:25:17,066|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-11 00:25:17,081|DEBUG|logic.py:114] setting count : 57
+[2020-05-11 00:25:17,272|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-11 00:25:17,286|DEBUG|logic.py:114] setting count : 57
+[2020-05-11 06:25:56,677|DEBUG|plugin.py:69] plugin_load:system
+[2020-05-11 06:25:56,679|DEBUG|logic_selenium.py:153] None
+[2020-05-11 06:26:53,584|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-11 06:26:53,600|DEBUG|logic.py:114] setting count : 57
+[2020-05-11 06:26:53,861|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-11 06:26:53,874|DEBUG|logic.py:114] setting count : 57
+[2020-05-11 12:27:52,179|DEBUG|plugin.py:69] plugin_load:system
+[2020-05-11 12:27:52,180|DEBUG|logic_selenium.py:153] None
+[2020-05-11 12:28:40,392|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-11 12:28:40,410|DEBUG|logic.py:114] setting count : 57
+[2020-05-11 12:28:40,549|DEBUG|plugin.py:64] plugin_load:system
+[2020-05-11 12:28:40,563|DEBUG|logic.py:114] setting count : 57

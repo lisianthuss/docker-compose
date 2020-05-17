@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  portainer:
+    image: portainer/portainer
+    container_name: portainer
+    ports:
+      - 9000:9000
+    networks:
+      - portainer
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - $PWD/data:/data
+    labels:
+      - "traefik.enable=true"
+      - 'traefik.http.routers.portainer.rule=Host("portainer.luel.duckdns.org")'
+      - "traefik.http.routers.portainer.entrypoints=web"
+      - "traefik.http.routers.portainer.service=portainer-svc"
+      - "traefik.http.services.portainer-svc.loadbalancer.server.port=9000"
+networks:
+  portainer:
+    external: true

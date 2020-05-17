@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  nginx-proxy:
+    image: alexanderkrause/rpi-nginx-proxy:alpine
+    container_name: nginx-proxy
+    command:
+      - "nginx-debug"
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - $PWD/nginx.conf:/etc/nginx/conf.d/default.conf
+      - $PWD/nginx-log:/var/log/nginx
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+
+  whoami:
+    image: containous/whoami
+    container_name: whoami
+    environment:
+      - VIRTUAL_HOST=whoami.localhost
+    volumes:
+      - $PWD/data/certbot/conf:/etc/letsencrypt
+      - $PWD/data/certbot/www:/var/www/certbot
+

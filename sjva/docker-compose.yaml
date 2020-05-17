@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  sjva:
+    image: soju6jan/sjva:0.2-arm32v7
+    container_name: sjva
+    ports:
+      - 9999:9999
+    volumes:
+      - /$PWD/data:/app/data
+      - /:/host
+

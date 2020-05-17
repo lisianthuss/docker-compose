@@ -1,0 +1,35 @@
+[2020-05-07 18:54:40,504|DEBUG|D:\Cloud\CloudStation\SJ\SJVA\plugin\rclone\plugin.py:45] plugin_load:rclone
+[2020-05-07 19:11:35,144|DEBUG|plugin.py:50] plugin_load:rclone
+[2020-05-07 19:28:25,021|DEBUG|plugin.py:77] DETAIL rclone list
+[2020-05-07 19:28:25,518|DEBUG|plugin.py:159] AJAX rclone filelist
+[2020-05-07 19:28:25,561|DEBUG|logic.py:573] ModelRcloneFile count:0
+[2020-05-07 23:19:58,905|DEBUG|plugin.py:50] plugin_load:rclone
+[2020-05-08 05:19:58,559|DEBUG|plugin.py:58] plugin_unload:rclone
+[2020-05-08 05:21:16,190|DEBUG|plugin.py:50] plugin_load:rclone
+[2020-05-08 11:22:05,808|DEBUG|plugin.py:58] plugin_unload:rclone
+[2020-05-08 11:23:18,039|DEBUG|plugin.py:50] plugin_load:rclone
+[2020-05-08 12:12:50,029|DEBUG|plugin.py:50] plugin_load:rclone
+[2020-05-08 18:13:03,096|DEBUG|plugin.py:58] plugin_unload:rclone
+[2020-05-08 18:13:54,039|DEBUG|plugin.py:50] plugin_load:rclone
+[2020-05-09 00:14:22,698|DEBUG|plugin.py:58] plugin_unload:rclone
+[2020-05-09 00:15:13,094|DEBUG|plugin.py:50] plugin_load:rclone
+[2020-05-09 06:15:53,759|DEBUG|plugin.py:58] plugin_unload:rclone
+[2020-05-09 06:16:38,268|DEBUG|plugin.py:50] plugin_load:rclone
+[2020-05-09 12:16:48,894|DEBUG|plugin.py:58] plugin_unload:rclone
+[2020-05-09 12:17:32,566|DEBUG|plugin.py:50] plugin_load:rclone
+[2020-05-09 18:17:56,874|DEBUG|plugin.py:58] plugin_unload:rclone
+[2020-05-09 18:18:37,043|DEBUG|plugin.py:50] plugin_load:rclone
+[2020-05-10 00:19:22,636|DEBUG|plugin.py:58] plugin_unload:rclone
+[2020-05-10 00:20:02,786|DEBUG|plugin.py:50] plugin_load:rclone
+[2020-05-10 06:20:34,456|DEBUG|plugin.py:58] plugin_unload:rclone
+[2020-05-10 06:21:12,151|DEBUG|plugin.py:50] plugin_load:rclone
+[2020-05-10 12:21:25,831|DEBUG|plugin.py:58] plugin_unload:rclone
+[2020-05-10 12:22:12,400|DEBUG|plugin.py:50] plugin_load:rclone
+[2020-05-10 18:22:51,596|DEBUG|plugin.py:58] plugin_unload:rclone
+[2020-05-10 18:23:35,770|DEBUG|plugin.py:50] plugin_load:rclone
+[2020-05-11 00:24:15,405|DEBUG|plugin.py:58] plugin_unload:rclone
+[2020-05-11 00:25:18,991|DEBUG|plugin.py:50] plugin_load:rclone
+[2020-05-11 06:25:56,667|DEBUG|plugin.py:58] plugin_unload:rclone
+[2020-05-11 06:26:55,529|DEBUG|plugin.py:50] plugin_load:rclone
+[2020-05-11 12:27:52,173|DEBUG|plugin.py:58] plugin_unload:rclone
+[2020-05-11 12:28:42,953|DEBUG|plugin.py:50] plugin_load:rclone

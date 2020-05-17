@@ -1,0 +1,64 @@
+version: '3'
+
+services:
+  gitea_db:
+    image: jsurf/rpi-mariadb
+    container_name: gitea_db
+    restart: always
+    volumes:
+      - $PWD/db:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=gitea
+      - MYSQL_DATABASE=gitea
+      - MYSQL_USER=gitea
+      - MYSQL_PASSWORD=gitea
+    labels:
+      - traefik.enable=false
+    networks:
+      - gitea
+      
+  gitea:
+    image: kunde21/gitea-arm
+    container_name: gitea
+    restart: always
+    environment:
+      - DOMAIN=git.luel.duckdns.org
+      - SSH_DOMAIN=git.luel.duckdns.org
+      - SSH_PORT=22
+      - SSH_LISTEN_PORT=22
+      - USER_UID=1000
+      - USER_GID=1000
+      - DB_TYPE=mysql
+      - DB_HOST=db:3306
+      - DB_NAME=gitea
+      - DB_USER=gitea
+      - DB_PASSWORD=gitea
+    volumes:
+      - $PWD/gitea:/data
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    networks:
+      - gitea
+    ports:
+      - 3000:3000
+      - 22:22
+    depends_on:
+      - gitea_db
+    labels:
+      - "traefik.enable=true"
+        #- 'traefik.http.routers.gitea-web.rule=Host("luel.duckdns.org") && PathPrefix("/git")'
+      - 'traefik.http.routers.gitea-web.rule=Host("git.luel.duckdns.org")'
+      - "traefik.http.routers.gitea-web.entrypoints=web"
+      - "traefik.http.routers.gitea-web.service=gitea-web-svc"
+      - "traefik.http.services.gitea-web-svc.loadbalancer.server.port=3000"
+      - "traefik.tcp.routers.gitea-ssh.rule=HostSNI(`*`)"
+      - "traefik.tcp.routers.gitea-ssh.entrypoints=ssh"
+      - "traefik.tcp.routers.gitea-ssh.service=gitea-ssh-svc"
+      - "traefik.tcp.services.gitea-ssh-svc.loadbalancer.server.port=22"
+        #- "traefik.http.routers.gitea.rule=Host('git.luel.duckdns.org')"
+        #- "traefik.http.routers.gitea.tls=true"
+        #- "traefik.http.routers.gitea.tls=certresolver=letsenc"
+  
+networks:
+  gitea:
+    external: true

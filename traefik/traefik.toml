@@ -1,0 +1,28 @@
+[entryPoints]
+    [entryPoints.web]
+    address = ":80"
+    [entryPoints.webecure]
+    address = ":443"
+
+[log]
+    level = "DEBUG"
+
+[api]
+dashboard = true
+debug = true
+
+[file]
+watch = true
+
+[http]
+    [http.routers]
+        [http.routers.gitea]
+            entryPoints = ["web"]
+            rule = "Path('/git')"
+            service = "gitea-svc"
+    [http.services]
+        [http.services.gitea-svc]
+            [http.services.gitea-svc.loadBalancer]
+                [[http.service.gitea-svc.loadBalancer.servers]]
+                url = "localhost:3000"
+

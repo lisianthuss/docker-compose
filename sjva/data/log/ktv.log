@@ -1,0 +1,22 @@
+[2020-05-07 18:54:40,687|DEBUG|D:\Cloud\CloudStation\SJ\SJVA\plugin\ktv\logic.py:72] plugin_load:<apscheduler.schedulers.gevent.GeventScheduler object at 0xb56b7cb0>
+[2020-05-07 19:11:36,221|DEBUG|logic.py:74] plugin_load:<apscheduler.schedulers.gevent.GeventScheduler object at 0xb5596c50>
+[2020-05-07 19:17:15,962|DEBUG|plugin.py:72] AJAX ktv filelist
+[2020-05-07 19:17:16,008|DEBUG|logic.py:628] ModelKtvFile count:0
+[2020-05-07 19:28:45,300|DEBUG|plugin.py:72] AJAX ktv filelist
+[2020-05-07 19:28:45,341|DEBUG|logic.py:628] ModelKtvFile count:0
+[2020-05-07 23:19:59,084|DEBUG|logic.py:74] plugin_load:<apscheduler.schedulers.gevent.GeventScheduler object at 0xb5640bd0>
+[2020-05-08 05:21:16,355|DEBUG|logic.py:74] plugin_load:<apscheduler.schedulers.gevent.GeventScheduler object at 0xb55a7bd0>
+[2020-05-08 11:23:18,190|DEBUG|logic.py:74] plugin_load:<apscheduler.schedulers.gevent.GeventScheduler object at 0xb55dfbd0>
+[2020-05-08 12:12:50,207|DEBUG|logic.py:74] plugin_load:<apscheduler.schedulers.gevent.GeventScheduler object at 0xb5594bf0>
+[2020-05-08 18:13:54,208|DEBUG|logic.py:74] plugin_load:<apscheduler.schedulers.gevent.GeventScheduler object at 0xb5687bd0>
+[2020-05-09 00:15:13,267|DEBUG|logic.py:74] plugin_load:<apscheduler.schedulers.gevent.GeventScheduler object at 0xb55e3bd0>
+[2020-05-09 06:16:38,434|DEBUG|logic.py:74] plugin_load:<apscheduler.schedulers.gevent.GeventScheduler object at 0xb5620bd0>
+[2020-05-09 12:17:32,738|DEBUG|logic.py:74] plugin_load:<apscheduler.schedulers.gevent.GeventScheduler object at 0xb55e4bd0>
+[2020-05-09 18:18:37,209|DEBUG|logic.py:74] plugin_load:<apscheduler.schedulers.gevent.GeventScheduler object at 0xb55b1bd0>
+[2020-05-10 00:20:02,952|DEBUG|logic.py:74] plugin_load:<apscheduler.schedulers.gevent.GeventScheduler object at 0xb55d4bd0>
+[2020-05-10 06:21:12,315|DEBUG|logic.py:74] plugin_load:<apscheduler.schedulers.gevent.GeventScheduler object at 0xb5633bd0>
+[2020-05-10 12:22:12,582|DEBUG|logic.py:74] plugin_load:<apscheduler.schedulers.gevent.GeventScheduler object at 0xb55ecbd0>
+[2020-05-10 18:23:35,934|DEBUG|logic.py:74] plugin_load:<apscheduler.schedulers.gevent.GeventScheduler object at 0xb55c9bd0>
+[2020-05-11 00:25:19,159|DEBUG|logic.py:74] plugin_load:<apscheduler.schedulers.gevent.GeventScheduler object at 0xb55c4bd0>
+[2020-05-11 06:26:55,700|DEBUG|logic.py:74] plugin_load:<apscheduler.schedulers.gevent.GeventScheduler object at 0xb561abd0>
+[2020-05-11 12:28:43,122|DEBUG|logic.py:74] plugin_load:<apscheduler.schedulers.gevent.GeventScheduler object at 0xb5646bd0>
