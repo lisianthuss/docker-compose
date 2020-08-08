@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  daddy:
+    image: arm32v7/caddy
+    container_name: caddy
+    volumes:
+      - $PWD/Caddyfile:/etc/caddy/Caddyfile
+      - /etc/letsencrypt:/etc/letsencrypt
+    ports:
+      - 80:80
+      - 443:443
+    networks:
+      - caddy
+networks:
+  caddy:
+    external: true

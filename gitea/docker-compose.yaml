@@ -44,20 +44,20 @@ services:
       - 22:22
     depends_on:
       - gitea_db
-    labels:
-      - "traefik.enable=true"
-        #- 'traefik.http.routers.gitea-web.rule=Host("luel.duckdns.org") && PathPrefix("/git")'
-      - 'traefik.http.routers.gitea-web.rule=Host("git.luel.duckdns.org")'
-      - "traefik.http.routers.gitea-web.entrypoints=web"
-      - "traefik.http.routers.gitea-web.service=gitea-web-svc"
-      - "traefik.http.services.gitea-web-svc.loadbalancer.server.port=3000"
-      - "traefik.tcp.routers.gitea-ssh.rule=HostSNI(`*`)"
-      - "traefik.tcp.routers.gitea-ssh.entrypoints=ssh"
-      - "traefik.tcp.routers.gitea-ssh.service=gitea-ssh-svc"
-      - "traefik.tcp.services.gitea-ssh-svc.loadbalancer.server.port=22"
-        #- "traefik.http.routers.gitea.rule=Host('git.luel.duckdns.org')"
-        #- "traefik.http.routers.gitea.tls=true"
-        #- "traefik.http.routers.gitea.tls=certresolver=letsenc"
+        #labels:
+      #- "traefik.enable=true"
+      #  #- 'traefik.http.routers.gitea-web.rule=Host("luel.duckdns.org") && PathPrefix("/git")'
+      #- 'traefik.http.routers.gitea-web.rule=Host("git.luel.duckdns.org")'
+      #- "traefik.http.routers.gitea-web.entrypoints=web"
+      #- "traefik.http.routers.gitea-web.service=gitea-web-svc"
+      #- "traefik.http.services.gitea-web-svc.loadbalancer.server.port=3000"
+      #- "traefik.tcp.routers.gitea-ssh.rule=HostSNI(`*`)"
+      #- "traefik.tcp.routers.gitea-ssh.entrypoints=ssh"
+      #- "traefik.tcp.routers.gitea-ssh.service=gitea-ssh-svc"
+      #- "traefik.tcp.services.gitea-ssh-svc.loadbalancer.server.port=22"
+      #- "traefik.http.routers.gitea.rule=Host('git.luel.duckdns.org')"
+      #- "traefik.http.routers.gitea.tls=true"
+      #- "traefik.http.routers.gitea.tls=certresolver=letsenc"
   
 networks:
   gitea:

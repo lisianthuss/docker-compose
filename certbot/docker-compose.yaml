@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  certbot:
+    image: tobi312/rpi-certbot
+    container_name: certbot
+    ports:
+      - 80:80
+    entrypoint: certbot renew
+    volumes:
+      - /etc/letsencrypt:/etc/letsencrypt

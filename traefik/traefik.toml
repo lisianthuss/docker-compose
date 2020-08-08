@@ -1,28 +1,31 @@
+defaultEntryPoints = ["http"]
 [entryPoints]
     [entryPoints.web]
     address = ":80"
-    [entryPoints.webecure]
+
+    [entryPoints.websecure]
     address = ":443"
 
 [log]
     level = "DEBUG"
 
 [api]
-dashboard = true
-debug = true
+    insecure = true
+    
+[docker]
+    endpoint = "unix://var/run/docker.sock"
+    domain = "docker.localhost"
+    exposedByDefault = false
 
-[file]
-watch = true
-
-[http]
-    [http.routers]
-        [http.routers.gitea]
-            entryPoints = ["web"]
-            rule = "Path('/git')"
-            service = "gitea-svc"
-    [http.services]
-        [http.services.gitea-svc]
-            [http.services.gitea-svc.loadBalancer]
-                [[http.service.gitea-svc.loadBalancer.servers]]
-                url = "localhost:3000"
-
+[acme]
+entryPoint = "https"
+storage = "acme.json"
+caServer = "https://acme-v02.api.letsencrypt.org/directory"
+onHostRule = true
+    [acme.httpChallenge]
+        entryPoint = "http"
+    [acme.dnsChallenge]
+        provider = "cloudflare"
+        delayBeforeCheck = 0
+    [[acme.domains]]
+    main = "*.docker.localhost"

@@ -3,7 +3,6 @@ services:
   netdata:
     image: netdata/netdata
     container_name: netdata
-    hostname: example.com # set to fqdn of host
     ports:
       - 19999:19999
     cap_add:
@@ -16,12 +15,13 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock:ro
     networks:
       - internal
-    labels:
-      - "traefik.enable=true"
-      - 'traefik.http.routers.netdata.rule=Host("netdata.luel.duckdns.org")'
-      - "traefik.http.routers.netdata.entrypoints=web"
-      - "traefik.http.routers.netdata.service=netdata-svc"
-      - "traefik.http.services.netdata-svc.loadbalancer.server.port=19999"
+        #labels:
+      #- "traefik.enable=true"
+      #- 'traefik.http.routers.netdata.rule=Host("netdata.luel.duckdns.org")'
+      #- 'traefik.http.routers.netdata.rule=Host("luel.duckdns.org") && PathPrefix("/netdata")'
+      #- "traefik.http.routers.netdata.entrypoints=web"
+      #- "traefik.http.routers.netdata.service=netdata-svc"
+      #- "traefik.http.services.netdata-svc.loadbalancer.server.port=19999"
 networks:
   internal:
     external: true

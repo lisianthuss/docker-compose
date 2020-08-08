@@ -1,0 +1,19 @@
+luel.duckdns.org {
+    tls /etc/letsencrypt/live/luel.duckdns.org/fullchain.pem /etc/letsencrypt/live/luel.duckdns.org/privkey.pem
+
+    route /portainer/* {
+        uri strip_prefix /portainer
+        reverse_proxy 192.168.0.25:9000
+    }
+
+    route /netdata/* {
+        uri strip_prefix /netdata
+        reverse_proxy 192.168.0.25:19999
+    }
+
+    route /gitea/* {
+        uri strip_prefix /gitea
+        reverse_proxy 192.168.0.25:3000
+    }
+}
+

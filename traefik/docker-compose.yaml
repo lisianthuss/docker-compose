@@ -11,55 +11,67 @@ services:
       - "--providers.docker=true"
       - "--providers.docker.exposedbydefault=false"
 
+      # Entry Points
       - "--entrypoints.web.address=:80"
       - "--entrypoints.websecure.address=:443"
 
-      - "--certificatesresolvers.letsenc.acme.email=ionateous@gmail.com"
-      - "--certificatesresolvers.letsenc.acme.storage=acme.json"
-      - "--certificatesresolvers.letsenc.acme.tlsChallenge=true"
-      - "--certificatesresolvers.letsenc.acme.httpChallenge=true"
-      - "--certificatesresolvers.letsenc.acme.httpChallenge.entryPoint=web"
+      # HTTP Redirection
+      - "--entrypoints.web.http.redirections.entryPoint.to=websecure"
+      - "--entrypoints.web.http.redirections.entryPoint.scheme=https"
+    
+      # Let's Encrpyt
+      - "--certificatesresolvers.myresolver.acme.email=ionateous@gmail.com"
+      - "--certificatesresolvers.myresolver.acme.storage=acme.json"
+      - "--certificatesresolvers.myresolver.acme.tlsChallenge=true"
+      - "--certificatesresolvers.myresolver.acme.httpChallenge=true"
+      - "--certificatesresolvers.myresolver.acme.httpChallenge.entrypoint=web"
+      - "--certificatesresolvers.myresolver.acme.dnschallenge.provider=digitalocean"
+      - "--certificatesresolvers.myresolver.acme.dnschallenge.delayBeforeCheck=0"
 
       - "--entrypoints.ssh.address=:9022"
       - "--entrypoints.ssh.http.redirections.entrypoint.to=:22"
     volumes:
       #- ./traefik.toml:/etc/traefik/traefik.toml
-      - ./acme.json:/acme.json
+      #- ./acme.json:/acme.json
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
       - /var/run/docker.sock:/var/run/docker.sock
     ports:
-      - 80:80
+      #- 80:80
       - 443:443
       - 8080:8080
     networks:
       - gitea
       - portainer
       - internal
+      - web
     #dns:
     #192.168.0.25
     #192.168.0.1
 
     labels:
-      - "traefik.api.debug=true"
-      - "traefik.enable=true"
-      - "traefik.http.routers.traefik.entrypoint=web"
-      - 'traefik.http.routers.traefik.rule=Host("luel.duckdns.org")'
-      - "traefik.http.routers.traefik.service=api@interal"
+      - traefik.enable=true
+      - traefik.http.routers.dashboard.entrypoint=web
+      - traefik.http.routers.dashboard.rule=Host("traefik.luel.duckdns.org")
+      - traefik.http.routers.dashboard.tls=true
+      - traefik.http.routers.dashboard.tls.certresolver=myresolver
+      - traefik.http.routers.dashboard.service=api@interal
+      - traefik.http.routers.dashboard.middlewares=auth
+      - traefik.http.middlewares.auth.basicauth.users=luel:$$apr1$$H6uskkkW$$IgXLP6ewTrSuBkTrqE8wj/
 
-      - "traefik.http.routers.ssh.entrypoint=web"
-      - 'traefik.http.routers.ssh.rule=Host("ssh.duckdns.org")'
-      - "traefik.http.routers.ssh.service=ssh-svc"
-      - "traefik.http.services.ssh-svc.loadbalancer.server.port=22"
-      - "traefik.http.services.ssh-svc.loadbalancer.server.scheme=http"
+      - traefik.http.routers.ssh.entrypoint=web
+      - traefik.http.routers.ssh.rule=Host("ssh.luel.duckdns.org")
+      - traefik.http.routers.ssh.service=ssh-svc
+      - traefik.http.services.ssh-svc.loadbalancer.server.port=22
+      - traefik.http.services.ssh-svc.loadbalancer.server.scheme=http
 
       # redirect all http to https permanently
-      - "traefik.http.routers.http_catchall.rule=HostRegexp('{any:.+}')"
-      - "traefik.http.routers.http_catchall.entrypoints=web"
-      - "traefik.http.routers.http_catchall.middlewares=https_redirect"
+      - traefik.http.routers.http_catchall.rule=HostRegexp('{any:.+}')
+      - traefik.http.routers.http_catchall.entrypoints=web
+      - traefik.http.routers.http_catchall.middlewares=https_redirect
 
-      - "traefik.http.middlewares.https_redirect.redirectscheme.scheme=https"
-      - "traefik.http.middlewares.https_redirect.redirectscheme.permanent=true"
+      - traefik.http.middlewares.https_redirect.redirectscheme.scheme=https
+      - traefik.http.middlewares.https_redirect.redirectscheme.permanent=true
 
 networks:
   gitea:
@@ -67,5 +79,7 @@ networks:
   internal:
     external: true
   portainer:
+    external: true
+  web:
     external: true
 
