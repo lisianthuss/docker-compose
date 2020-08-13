@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  portainer:
+    image: portainer/portainer
+    container_name: portainer
+    expose:
+      - 9000
+    networks:
+        portainer:
+            ipv4_address:172.23.0.4
+
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - $PWD/data:/data
+
+        #labels:
+      #- "traefik.enable=true"
+      #- 'traefik.http.routers.portainer.rule=Host("portainer.luel.duckdns.org")'
+      #- "traefik.http.routers.portainer.entrypoints=web"
+      #- "traefik.http.routers.portainer.service=portainer-svc"
+      #- "traefik.http.services.portainer-svc.loadbalancer.server.port=9000"
+  daddy:
+    image: caddy/caddy
+    volumes:
+      - $PWD/Caddyfile:/etc/caddy/Caddyfile
+      - /etc/letsencrypt:/etc/letsencrypt
+    ports:
+      - 80:80
+      - 443:443

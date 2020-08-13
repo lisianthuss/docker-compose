@@ -8,12 +8,12 @@ luel2.duckdns.org {
 
     route /netdata/* {
         uri strip_prefix /netdata
-        reverse_proxy netdata:19999
+        reverse_proxy 172.23.0.2:19999
     }
 
     route /gitea/* {
         uri strip_prefix /gitea
-        reverse_proxy gitea:3000
+        reverse_proxy 172.21.0.3:3000
     }
 }
 

@@ -14,7 +14,7 @@ services:
       - /sys:/host/sys:ro
       - /var/run/docker.sock:/var/run/docker.sock:ro
     networks:
-      - internal
+        - netdata
         #labels:
       #- "traefik.enable=true"
       #- 'traefik.http.routers.netdata.rule=Host("netdata.luel.duckdns.org")'
@@ -23,5 +23,5 @@ services:
       #- "traefik.http.routers.netdata.service=netdata-svc"
       #- "traefik.http.services.netdata-svc.loadbalancer.server.port=19999"
 networks:
-  internal:
+  netdata:
     external: true

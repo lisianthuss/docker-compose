@@ -1,17 +1,71 @@
 version: '3'
 
 services:
-  daddy:
-    image: arm32v7/caddy
-    container_name: caddy
+  caddy:
+    image: caddy/caddy
     volumes:
       - $PWD/Caddyfile:/etc/caddy/Caddyfile
       - /etc/letsencrypt:/etc/letsencrypt
     ports:
       - 80:80
       - 443:443
-    networks:
-      - caddy
-networks:
-  caddy:
-    external: true
+
+  portainer:
+    image: portainer/portainer
+    container_name: portainer
+    expose:
+      - 9000
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - $PWD/data:/data
+
+  netdata:
+    image: netdata/netdata
+    container_name: netdata
+    expose:
+      - 19999
+    cap_add:
+      - SYS_PTRACE
+    security_opt:
+      - apparmor:unconfined
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+
+  gitea_db:
+    image: jsurf/rpi-mariadb
+    container_name: gitea_db
+    restart: always
+    volumes:
+      - $PWD/db:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=gitea
+      - MYSQL_DATABASE=gitea
+      - MYSQL_USER=gitea
+      - MYSQL_PASSWORD=gitea
+  gitea:
+    image: kunde21/gitea-arm
+    container_name: gitea
+    restart: always
+    environment:
+      - DOMAIN=git.luel.duckdns.org
+      - SSH_DOMAIN=git.luel.duckdns.org
+      - SSH_PORT=22
+      - SSH_LISTEN_PORT=22
+      - USER_UID=1000
+      - USER_GID=1000
+      - DB_TYPE=mysql
+      - DB_HOST=db:3306
+      - DB_NAME=gitea
+      - DB_USER=gitea
+      - DB_PASSWORD=gitea
+    volumes:
+      - $PWD/gitea:/data
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    expose:
+      - 3000
+      - 22
+    depends_on:
+      - gitea_db
